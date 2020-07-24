@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: auto;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 640px;
+  margin: 50px auto;
+}
+
+.image {
+  width: 100%;
+  padding-top: calc(100% / (16 / 9));
+  background-image: url("img/auto4.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px #fff;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.image:hover {
+  background-size: 250%;
+  box-shadow: 0 0 20px 10px royalblue;
+}
